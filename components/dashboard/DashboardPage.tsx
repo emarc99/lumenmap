@@ -9,6 +9,7 @@ import { CategoryShareChart } from "@/components/dashboard/CategoryShareChart";
 import { DetailPanel } from "@/components/dashboard/DetailPanel";
 import { FreshnessIndicator } from "@/components/dashboard/FreshnessIndicator";
 import { FreshnessWarning } from "@/components/dashboard/FreshnessWarning";
+import { FixtureOnboarding } from "@/components/dashboard/FixtureOnboarding";
 import { KpiCards } from "@/components/dashboard/KpiCards";
 import { NetworkTreemap } from "@/components/dashboard/NetworkTreemap";
 import { FlowView } from "@/components/dashboard/FlowView";
@@ -80,6 +81,8 @@ function DashboardContent() {
       </header>
 
       <FreshnessWarning />
+
+      <FixtureOnboarding />
 
       <SavedViewsControls />
 
