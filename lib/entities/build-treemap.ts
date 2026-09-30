@@ -734,7 +734,15 @@ export function buildAllTreemaps(
   const eventOperations = buildEventTypeTreemap(input, "ops");
   const actorOperations = buildActorTreemap(input, "ops");
   const eventTransaction = buildTransactionTreemap(input);
-  const actorTransaction = buildTransactionTreemap(input);
+  const actorTransaction: TreemapNode = {
+    name: "Network Activity",
+    value: 0,
+    meta: {
+      type: "root",
+      txnCount: 0,
+    },
+    children: [],
+  };
   const eventXlmVolume = serializeAssetValues(
     buildEventTypeTreemap(input, "xlm_volume"),
   );
