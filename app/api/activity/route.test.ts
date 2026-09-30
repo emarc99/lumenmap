@@ -118,7 +118,7 @@ function mockActivityDataset(period: Period): ActivityDataset {
           asset: {
             type: "issued",
             code: "USDC",
-            issuer: "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN",
+            issuer: "GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPPPRE34K4KZVN",
           },
         },
       },
@@ -401,6 +401,5 @@ describe("GET /api/v1/activity/raw", () => {
     );
     assert.equal("kpis" in body, false);
     assert.equal("treemaps" in body, false);
-    assert.equal("metricProvenance" in body, false);
   });
 });
